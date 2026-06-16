@@ -220,21 +220,56 @@ footer p {
 
 @media(max-width:768px) {
 
+    .menu-toggle {
+    display: block;
+}
+
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+    .nav-links.active {
+    display: flex;
+}
+
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+
+}
     nav {
-        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo-img{
+        width: 45px;
+        height: 45px;
     }
 
     .nav-links {
-        flex-direction: column;
-        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 15px 0;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .hero p {
@@ -375,4 +410,10 @@ textarea:focus {
     outline: none;
     border-color: #0066cc;
     box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+}
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
