@@ -243,11 +243,12 @@ footer p {
     }
 
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
         margin-top: 10px;
+}
     }
 
     .nav-links.active {
