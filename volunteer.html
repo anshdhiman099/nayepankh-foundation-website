@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - NayePankh Foundation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>NayePankh Foundation</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+
+        <h1>Become a Volunteer</h1>
+
+        <p>
+            Join our mission and help us create a better future.
+        </p>
+
+    </section>
+
+    <!-- Volunteer Form -->
+
+    <section class="about-section">
+
+        <h2>Volunteer Registration Form</h2>
+
+        <img src="images/women.jpg.jpg"
+             alt="Volunteer"
+             class="volunteer-image"
+             data-aos="zoom-in">
+
+        <form id="volunteerForm"
+              data-aos="fade-up">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Your Full Name"
+                   required>
+
+            <br><br>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter Your Email"
+                   required>
+
+            <br><br>
+
+            <input type="tel"
+                   id="phone"
+                   placeholder="Enter Your Phone Number"
+                   required>
+
+            <br><br>
+
+            <input type="text"
+                   id="skills"
+                   placeholder="Your Skills (Web Development, Teaching, etc.)"
+                   required>
+
+            <br><br>
+
+            <textarea id="message"
+                      rows="6"
+                      placeholder="Why do you want to become a volunteer?"
+                      required>
+            </textarea>
+
+            <br><br>
+
+            <button type="submit" class="btn">
+                Register Now
+            </button>
+
+        </form>
+
+        <br>
+
+        <h3 id="successMessage"></h3>
+
+    </section>
+
+    <!-- Benefits Section -->
+
+    <section class="mission"
+             data-aos="fade-right">
+
+        <h2>Why Volunteer With Us?</h2>
+
+        <div class="cards" data-aos="flip-left">
+
+            <div class="card" data-aos="zoom-in">
+                <h3>🌍 Make an Impact</h3>
+                <p>
+                    Help communities and contribute to meaningful social causes.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <h3>📈 Learn New Skills</h3>
+                <p>
+                    Improve leadership, teamwork, and communication abilities.
+                </p>
+            </div>
+
+            <div class="card" data-aos="flip-right">
+                <h3>🤝 Meet New People</h3>
+                <p>
+                    Work with passionate volunteers and build your network.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>NayePankh Foundation</h3>
+
+        <p>Email: info@nayepankh.org</p>
+
+        <p>Phone: +91 9876543210</p>
+
+        <p>© 2026 All Rights Reserved</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Dark Mode Button */
+
+#darkModeBtn {
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    color: #0066cc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#darkModeBtn:hover {
+    background-color: #ddd;
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #d9ecff;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004a99;
+    transform: scale(1.05);
+}
+
+/* Mission Section */
+
+.mission {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.mission h2 {
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* Statistics */
+
+.stats {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.stats h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #0066cc;
+    color: white;
+    width: 200px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.stat-box h3 {
+    font-size: 40px;
+}
+
+/* About Page */
+
+.page-banner {
+    text-align: center;
+    background-color: #d9ecff;
+    padding: 70px 20px;
+}
+
+.page-banner h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.about-section p {
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about-section {
+        padding: 30px 20px;
+    }
+
+}
+/* ===========================
+   Dark Mode
+=========================== */
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+.dark-mode .hero {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .page-banner {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .card {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.dark-mode .stats {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .stat-box {
+    background-color: #444;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode footer {
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.hero-image{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 15px;
+}
+.about-image{
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.volunteer-image{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+}
+.contact-image{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+}
+/* Forms */
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+}
