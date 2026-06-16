@@ -237,7 +237,7 @@ footer p {
     .menu-toggle {
         display: block;
         font-size: 30px;
-        color: ywllow;
+        color: white;
         cursor: pointer;
         margin: 10px 0;
     }
@@ -411,6 +411,6 @@ textarea:focus {
 .menu-toggle {
     display: none;
     font-size: 30px;
-    color: white;
+    color: red;
     cursor: pointer;
 }
