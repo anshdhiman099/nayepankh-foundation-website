@@ -37,10 +37,11 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    gap: 30px;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .nav-links a {
